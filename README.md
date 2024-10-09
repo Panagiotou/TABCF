@@ -1,6 +1,7 @@
 # TABCF: Counterfactual Explanations for Tabular Data Using a Transformer-Based VAE
 
-This paper has been accepted at the 5th ACM International Conference on AI in Finance (ICAIF '24), November 14--17, 2024, Brooklyn, NY, USA.
+*This paper has been accepted at the 5th ACM International Conference on AI in Finance (ICAIF '24), November 14-17, 2024, Brooklyn, NY, USA.*
+
 
 <div align="center">
   <img src="./figures/method.png" alt="Figure 1" width="650"/>
