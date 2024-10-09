@@ -1,6 +1,10 @@
 # TABCF: Counterfactual Explanations for Tabular Data Using a Transformer-Based VAE
 
-![TABCF](./figures/method.png)
+This paper has been accepted at the 5th ACM International Conference on AI in Finance (ICAIF '24), November 14--17, 2024, Brooklyn, NY, USA.
+
+<div align="center">
+  <img src="./figures/method.png" alt="Figure 1" width="650"/>
+</div>
 
 Abstract: 
 
@@ -72,9 +76,6 @@ python main.py --dataname [NAME_OF_DATASET] --method wachter --mode evaluate --n
 * [/lamda_loss_plot_all.py](./lamda_loss_plot_all.py) runs the ablation study experiment.
 * [/feature_usage_plot.py](./feature_usage_plot.py) runs the feature-usage experiment.
 * [/shapley.py](./shapley.py) runs the shapley-values experiment.
-
-
-
 
 
 
