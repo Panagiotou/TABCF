@@ -1,0 +1,77 @@
+adult:
+  target: income
+  continuous:
+    - age
+    - fnlwgt
+    - education-num
+    - capital-gain
+    - hours-per-week
+    - capital-loss
+  categorical:
+    - marital-status
+    - native-country
+    - occupation
+    - race
+    - relationship
+    - sex
+    - workclass
+  immutable:
+    - age
+    - sex
+give_me_some_credit:
+  target: SeriousDlqin2yrs
+  continuous:
+    - RevolvingUtilizationOfUnsecuredLines
+    - age
+    - NumberOfTime30-59DaysPastDueNotWorse
+    - DebtRatio
+    - MonthlyIncome
+    - NumberOfOpenCreditLinesAndLoans
+    - NumberOfTimes90DaysLate
+    - NumberRealEstateLoansOrLines
+    - NumberOfTime60-89DaysPastDueNotWorse
+    - NumberOfDependents
+  categorical:
+  immutable:
+    - age
+compas:
+  target: score
+  continuous:
+    - age
+    - two_year_recid
+    - priors_count
+    - length_of_stay
+  categorical:
+    - c_charge_degree
+    - race
+    - sex
+  immutable:
+    - age
+    - race
+    - sex
+heloc:
+  target: RiskPerformance
+  continuous:
+    - ExternalRiskEstimate
+    - MSinceOldestTradeOpen
+    - MSinceMostRecentTradeOpen
+    - AverageMInFile
+    - NumSatisfactoryTrades
+    - NumTrades60Ever2DerogPubRec
+    - NumTrades90Ever2DerogPubRec
+    - PercentTradesNeverDelq
+    - MSinceMostRecentDelq
+    - NumTotalTrades
+    - NumTradesOpeninLast12M
+    - PercentInstallTrades
+    - MSinceMostRecentInqexcl7days
+    - NumInqLast6M
+    - NumInqLast6Mexcl7days
+    - NetFractionRevolvingBurden
+    - NetFractionInstallBurden
+    - NumRevolvingTradesWBalance
+    - NumInstallTradesWBalance
+    - NumBank2NatlTradesWHighUtilization
+    - PercentTradesWBalance
+  categorical:
+  immutable:

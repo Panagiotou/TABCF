@@ -1,0 +1,39 @@
+{
+    "name": "lending-club",
+    "task_type": "binclass",
+    "header": 0,
+    "column_names": [
+        "loan_amnt", "term", "int_rate", "installment", "grade", "emp_length", 
+        "home_ownership", "annual_inc", "dti", "delinq_2yrs", 
+        "fico_range_low", "fico_range_high", "loan_status"
+    ],
+    "ignore_columns":[],
+    "target_col":"loan_status",
+    "file_type": "csv",
+    "accepted_path": "data/lending-club/accepted_2007_to_2018q4.csv/accepted_2007_to_2018Q4.csv",
+    "rejected_path": "data/lending-club/rejected_2007_to_2018q4.csv/rejected_2007_to_2018Q4.csv",
+    "data_path": "data/lending-club/accepted_2007_to_2018q4.csv/accepted_2007_to_2018Q4.csv",
+    "test_path": "",
+    "column_info": {
+        "loan_amnt": "float",
+        "term": "str",
+        "int_rate": "float",
+        "installment": "float", 
+        "grade": "str",
+        "emp_length": "str", 
+        "home_ownership": "str",
+        "annual_inc": "float", 
+        "dti": "float", 
+        "delinq_2yrs": "float", 
+        "fico_range_low": "float", 
+        "fico_range_high": "float",
+        "loan_status": "str"
+    },
+    "preprocess_columns":{
+        "loan_status":["Fully Paid", "Charged Off"]
+    },
+    "samples_keep": 100000,
+    "train_test_split":0.5,
+    "train_num": 0,
+    "test_num": 0
+}

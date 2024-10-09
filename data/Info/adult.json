@@ -1,0 +1,57 @@
+{
+    "name": "adult",
+    "task_type": "binclass",
+    "header": null,
+    "column_names": [
+        "age",
+        "workclass",
+        "fnlwgt",
+        "education",
+        "education.num",
+        "marital.status",
+        "occupation",
+        "relationship",
+        "race",
+        "sex",
+        "capital.gain",
+        "capital.loss",
+        "hours.per.week",
+        "native.country",
+        "income"
+    ],
+    "immutable":[
+        "marital.status",
+        "sex",
+        "race"
+    ],
+    "ignore_columns":[
+        "fnlwgt",
+        "education.num"
+    ],
+    "target_col":"income",
+    "file_type": "csv",
+    "data_path": "data/adult/adult.data",
+    "test_path": "data/adult/adult.test",
+    "column_info": {
+        "age": "float",
+        "workclass": "str",
+        "fnlwgt": "float",
+        "education": "str",
+        "education.num": "float",
+        "marital.status": "str",
+        "occupation": "str",
+        "relationship": "str",
+        "race": "str",
+        "sex": "str",
+        "capital.gain": "float",
+        "capital.loss": "float",
+        "hours.per.week": "float",
+        "native.country": "str",
+        "income": "str"
+    },
+    "preprocess_columns":{
+        "native.country":[" United-States"]
+    },
+    "train_num": 32561,
+    "test_num": 16281
+}

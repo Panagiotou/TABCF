@@ -1,0 +1,355 @@
+adult:
+  ann:
+    pytorch:
+      feature_order:
+        - age
+        - fnlwgt
+        - education-num
+        - capital-gain
+        - capital-loss
+        - hours-per-week
+        - workclass_Private
+        - marital-status_Non-Married
+        - occupation_Other
+        - relationship_Non-Husband
+        - race_White
+        - sex_Male
+        - native-country_US
+    tensorflow:
+      feature_order:
+        - age
+        - fnlwgt
+        - education-num
+        - capital-gain
+        - capital-loss
+        - hours-per-week
+        - workclass_Private
+        - marital-status_Non-Married
+        - occupation_Other
+        - relationship_Non-Husband
+        - race_White
+        - sex_Male
+        - native-country_US
+
+  linear:
+    pytorch:
+      feature_order:
+        - age
+        - fnlwgt
+        - education-num
+        - capital-gain
+        - capital-loss
+        - hours-per-week
+        - workclass_Private
+        - marital-status_Non-Married
+        - occupation_Other
+        - relationship_Non-Husband
+        - race_White
+        - sex_Male
+        - native-country_US
+    tensorflow:
+      feature_order:
+        - age
+        - fnlwgt
+        - education-num
+        - capital-gain
+        - capital-loss
+        - hours-per-week
+        - workclass_Private
+        - marital-status_Non-Married
+        - occupation_Other
+        - relationship_Non-Husband
+        - race_White
+        - sex_Male
+        - native-country_US
+
+  forest:
+    sklearn:
+      feature_order:
+        - age
+        - fnlwgt
+        - education-num
+        - capital-gain
+        - capital-loss
+        - hours-per-week
+    xgboost:
+      feature_order:
+        - age
+        - fnlwgt
+        - education-num
+        - capital-gain
+        - capital-loss
+        - hours-per-week
+
+give_me_some_credit:
+  ann:
+    tensorflow:
+      feature_order:
+        - RevolvingUtilizationOfUnsecuredLines
+        - age
+        - NumberOfTime30-59DaysPastDueNotWorse
+        - DebtRatio
+        - MonthlyIncome
+        - NumberOfOpenCreditLinesAndLoans
+        - NumberOfTimes90DaysLate
+        - NumberRealEstateLoansOrLines
+        - NumberOfTime60-89DaysPastDueNotWorse
+        - NumberOfDependents
+    pytorch:
+      feature_order:
+        - RevolvingUtilizationOfUnsecuredLines
+        - age
+        - NumberOfTime30-59DaysPastDueNotWorse
+        - DebtRatio
+        - MonthlyIncome
+        - NumberOfOpenCreditLinesAndLoans
+        - NumberOfTimes90DaysLate
+        - NumberRealEstateLoansOrLines
+        - NumberOfTime60-89DaysPastDueNotWorse
+        - NumberOfDependents
+  linear:
+    tensorflow:
+      feature_order:
+        - RevolvingUtilizationOfUnsecuredLines
+        - age
+        - NumberOfTime30-59DaysPastDueNotWorse
+        - DebtRatio
+        - MonthlyIncome
+        - NumberOfOpenCreditLinesAndLoans
+        - NumberOfTimes90DaysLate
+        - NumberRealEstateLoansOrLines
+        - NumberOfTime60-89DaysPastDueNotWorse
+        - NumberOfDependents
+    pytorch:
+      feature_order:
+        - RevolvingUtilizationOfUnsecuredLines
+        - age
+        - NumberOfTime30-59DaysPastDueNotWorse
+        - DebtRatio
+        - MonthlyIncome
+        - NumberOfOpenCreditLinesAndLoans
+        - NumberOfTimes90DaysLate
+        - NumberRealEstateLoansOrLines
+        - NumberOfTime60-89DaysPastDueNotWorse
+        - NumberOfDependents
+  forest:
+    sklearn:
+      feature_order:
+        - RevolvingUtilizationOfUnsecuredLines
+        - age
+        - NumberOfTime30-59DaysPastDueNotWorse
+        - DebtRatio
+        - MonthlyIncome
+        - NumberOfOpenCreditLinesAndLoans
+        - NumberOfTimes90DaysLate
+        - NumberRealEstateLoansOrLines
+        - NumberOfTime60-89DaysPastDueNotWorse
+        - NumberOfDependents
+    xgboost:
+      feature_order:
+        - RevolvingUtilizationOfUnsecuredLines
+        - age
+        - NumberOfTime30-59DaysPastDueNotWorse
+        - DebtRatio
+        - MonthlyIncome
+        - NumberOfOpenCreditLinesAndLoans
+        - NumberOfTimes90DaysLate
+        - NumberRealEstateLoansOrLines
+        - NumberOfTime60-89DaysPastDueNotWorse
+        - NumberOfDependents
+
+compas:
+  ann:
+    tensorflow:
+      feature_order:
+        - age
+        - two_year_recid
+        - priors_count
+        - length_of_stay
+        - c_charge_degree_M
+        - race_Other
+        - sex_Male
+    pytorch:
+      feature_order:
+        - age
+        - two_year_recid
+        - priors_count
+        - length_of_stay
+        - c_charge_degree_M
+        - race_Other
+        - sex_Male
+  linear:
+    tensorflow:
+      feature_order:
+        - age
+        - two_year_recid
+        - priors_count
+        - length_of_stay
+        - c_charge_degree_M
+        - race_Other
+        - sex_Male
+    pytorch:
+      feature_order:
+        - age
+        - two_year_recid
+        - priors_count
+        - length_of_stay
+        - c_charge_degree_M
+        - race_Other
+        - sex_Male
+  forest:
+    sklearn:
+      feature_order:
+        - age
+        - two_year_recid
+        - priors_count
+        - length_of_stay
+    xgboost:
+      feature_order:
+        - age
+        - two_year_recid
+        - priors_count
+        - length_of_stay
+
+heloc:
+  ann:
+    tensorflow:
+      feature_order:
+        - ExternalRiskEstimate
+        - MSinceOldestTradeOpen
+        - MSinceMostRecentTradeOpen
+        - AverageMInFile
+        - NumSatisfactoryTrades
+        - NumTrades60Ever2DerogPubRec
+        - NumTrades90Ever2DerogPubRec
+        - PercentTradesNeverDelq
+        - MSinceMostRecentDelq
+        - NumTotalTrades
+        - NumTradesOpeninLast12M
+        - PercentInstallTrades
+        - MSinceMostRecentInqexcl7days
+        - NumInqLast6M
+        - NumInqLast6Mexcl7days
+        - NetFractionRevolvingBurden
+        - NetFractionInstallBurden
+        - NumRevolvingTradesWBalance
+        - NumInstallTradesWBalance
+        - NumBank2NatlTradesWHighUtilization
+        - PercentTradesWBalance
+    pytorch:
+      feature_order:
+        - ExternalRiskEstimate
+        - MSinceOldestTradeOpen
+        - MSinceMostRecentTradeOpen
+        - AverageMInFile
+        - NumSatisfactoryTrades
+        - NumTrades60Ever2DerogPubRec
+        - NumTrades90Ever2DerogPubRec
+        - PercentTradesNeverDelq
+        - MSinceMostRecentDelq
+        - NumTotalTrades
+        - NumTradesOpeninLast12M
+        - PercentInstallTrades
+        - MSinceMostRecentInqexcl7days
+        - NumInqLast6M
+        - NumInqLast6Mexcl7days
+        - NetFractionRevolvingBurden
+        - NetFractionInstallBurden
+        - NumRevolvingTradesWBalance
+        - NumInstallTradesWBalance
+        - NumBank2NatlTradesWHighUtilization
+        - PercentTradesWBalance
+  linear:
+    tensorflow:
+      feature_order:
+        - ExternalRiskEstimate
+        - MSinceOldestTradeOpen
+        - MSinceMostRecentTradeOpen
+        - AverageMInFile
+        - NumSatisfactoryTrades
+        - NumTrades60Ever2DerogPubRec
+        - NumTrades90Ever2DerogPubRec
+        - PercentTradesNeverDelq
+        - MSinceMostRecentDelq
+        - NumTotalTrades
+        - NumTradesOpeninLast12M
+        - PercentInstallTrades
+        - MSinceMostRecentInqexcl7days
+        - NumInqLast6M
+        - NumInqLast6Mexcl7days
+        - NetFractionRevolvingBurden
+        - NetFractionInstallBurden
+        - NumRevolvingTradesWBalance
+        - NumInstallTradesWBalance
+        - NumBank2NatlTradesWHighUtilization
+        - PercentTradesWBalance
+    pytorch:
+      feature_order:
+        - ExternalRiskEstimate
+        - MSinceOldestTradeOpen
+        - MSinceMostRecentTradeOpen
+        - AverageMInFile
+        - NumSatisfactoryTrades
+        - NumTrades60Ever2DerogPubRec
+        - NumTrades90Ever2DerogPubRec
+        - PercentTradesNeverDelq
+        - MSinceMostRecentDelq
+        - NumTotalTrades
+        - NumTradesOpeninLast12M
+        - PercentInstallTrades
+        - MSinceMostRecentInqexcl7days
+        - NumInqLast6M
+        - NumInqLast6Mexcl7days
+        - NetFractionRevolvingBurden
+        - NetFractionInstallBurden
+        - NumRevolvingTradesWBalance
+        - NumInstallTradesWBalance
+        - NumBank2NatlTradesWHighUtilization
+        - PercentTradesWBalance
+  forest:
+    sklearn:
+      feature_order:
+        - ExternalRiskEstimate
+        - MSinceOldestTradeOpen
+        - MSinceMostRecentTradeOpen
+        - AverageMInFile
+        - NumSatisfactoryTrades
+        - NumTrades60Ever2DerogPubRec
+        - NumTrades90Ever2DerogPubRec
+        - PercentTradesNeverDelq
+        - MSinceMostRecentDelq
+        - NumTotalTrades
+        - NumTradesOpeninLast12M
+        - PercentInstallTrades
+        - MSinceMostRecentInqexcl7days
+        - NumInqLast6M
+        - NumInqLast6Mexcl7days
+        - NetFractionRevolvingBurden
+        - NetFractionInstallBurden
+        - NumRevolvingTradesWBalance
+        - NumInstallTradesWBalance
+        - NumBank2NatlTradesWHighUtilization
+        - PercentTradesWBalance
+    xgboost:
+      feature_order:
+        - ExternalRiskEstimate
+        - MSinceOldestTradeOpen
+        - MSinceMostRecentTradeOpen
+        - AverageMInFile
+        - NumSatisfactoryTrades
+        - NumTrades60Ever2DerogPubRec
+        - NumTrades90Ever2DerogPubRec
+        - PercentTradesNeverDelq
+        - MSinceMostRecentDelq
+        - NumTotalTrades
+        - NumTradesOpeninLast12M
+        - PercentInstallTrades
+        - MSinceMostRecentInqexcl7days
+        - NumInqLast6M
+        - NumInqLast6Mexcl7days
+        - NetFractionRevolvingBurden
+        - NetFractionInstallBurden
+        - NumRevolvingTradesWBalance
+        - NumInstallTradesWBalance
+        - NumBank2NatlTradesWHighUtilization
+        - PercentTradesWBalance

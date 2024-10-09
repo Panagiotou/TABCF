@@ -1,0 +1,38 @@
+{
+    "name": "bank",
+    "task_type": "binclass",
+    "header": 0,
+    "column_names": ["age", "job", "marital", "education", "default", "balance", "housing", "loan", "contact", "day", "month", "duration", "campaign", "pdays", "previous", "poutcome", "y"],
+    "ignore_columns":[],
+    "target_col":"y",
+    "file_type": "csv",
+    "data_path": "data/bank/bank.csv",
+    "test_path": "",
+    "column_info": {
+        "age": "float",
+        "job": "str",
+        "marital": "str",
+        "education": "str",
+        "default": "str",
+        "balance": "float",
+        "housing": "str",
+        "loan": "str",
+        "contact": "str",
+        "day": "float",
+        "month": "str",
+        "duration": "float",
+        "campaign": "float",
+        "pdays": "float",
+        "previous": "float",
+        "poutcome": "str",
+        "y": "str"
+    },
+    "preprocess_columns":{
+    },
+    "samples_keep": 100000,
+    "train_test_split":0.5,
+    "train_num": 0,
+    "test_num": 0,
+    "target_class": "yes",
+    "negative_class": "no"
+}

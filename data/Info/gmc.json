@@ -1,0 +1,35 @@
+{
+    "name": "gmc",
+    "task_type": "binclass",
+    "header": 0,
+    "column_names": [
+        "RevolvingUtilizationOfUnsecuredLines","age",
+        "NumberOfTime30-59DaysPastDueNotWorse","DebtRatio","MonthlyIncome",
+        "NumberOfOpenCreditLinesAndLoans","NumberOfTimes90DaysLate","NumberRealEstateLoansOrLines",
+        "NumberOfTime60-89DaysPastDueNotWorse","NumberOfDependents","SeriousDlqin2yrs"
+    ],
+    "ignore_columns":[],
+    "target_col":"SeriousDlqin2yrs",
+    "file_type": "csv",
+    "data_path": "data/gmc/cs-training.csv",
+    "test_path": "",
+    "column_info": {
+        "RevolvingUtilizationOfUnsecuredLines": "float",
+        "age": "float",
+        "DebtRatio": "float", 
+        "MonthlyIncome": "float",
+        "NumberOfOpenCreditLinesAndLoans": "float", 
+        "NumberOfTimes90DaysLate": "float",
+        "NumberRealEstateLoansOrLines": "float", 
+        "NumberOfTime30-59DaysPastDueNotWorse": "str",
+        "NumberOfTime60-89DaysPastDueNotWorse": "str",
+        "NumberOfDependents": "str", 
+        "SeriousDlqin2yrs": "str"
+    },
+    "preprocess_columns":{
+    },
+    "train_num": 0,
+    "test_num": 0,
+    "samples_keep": 100000,
+    "train_test_split":0.5
+}
