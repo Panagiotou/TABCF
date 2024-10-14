@@ -354,11 +354,11 @@ def process_data(name):
     train_df.to_csv(f'{save_dir}/train.csv', index = False)
     test_df.to_csv(f'{save_dir}/test.csv', index = False)
 
-    if not os.path.exists(f'synthetic/{name}'):
-        os.makedirs(f'synthetic/{name}')
+    # if not os.path.exists(f'synthetic/{name}'):
+    #     os.makedirs(f'synthetic/{name}')
     
-    train_df.to_csv(f'synthetic/{name}/real.csv', index = False)
-    test_df.to_csv(f'synthetic/{name}/test.csv', index = False)
+    # train_df.to_csv(f'synthetic/{name}/real.csv', index = False)
+    # test_df.to_csv(f'synthetic/{name}/test.csv', index = False)
 
     print('Numerical', X_num_train.shape)
     print('Categorical', X_cat_train.shape)
