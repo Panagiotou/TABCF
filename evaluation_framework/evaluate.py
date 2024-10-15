@@ -217,7 +217,7 @@ def main(args):
 
     if method == "dice":
         output_folder_name = f'{dataname}/DiCE/{dice_method}/{optimization_parameters}'
-    elif method == "tabsyn":
+    elif method == "tabcf":
         output_file_name_vae = get_name_form_args(args)
         output_folder_name = f'{dataname}/TABCF/{output_file_name_vae}/{dice_method}/{optimization_parameters}/'
     elif method == "revise":
@@ -285,11 +285,11 @@ def main(args):
 
     feature_changes_count = dict(zip(column_names, np.zeros((len(column_names)))))
 
+
     for indx, row in original_test_samples.iterrows():
 
-        metrics_for_sample = []
-
         original_sample = original_test_samples.iloc[indx:indx+1]
+
         id = original_sample["id"].values[0]
         correct_cfs = cfs[(cfs["id"] == id) & (cfs["target_prob"] > 0.5)]
 
