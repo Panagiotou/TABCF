@@ -462,15 +462,19 @@ class Encoder_model_Z(nn.Module):
 #         x = torch.sigmoid(x)  # Apply sigmoid to the output
 #         return x
     
-
+    
 class BBMLPCLF(nn.Module):
-    def __init__(self, input_size, output_size=2, hidden_size=1000):
+    def __init__(self, input_size, output_size=2, hidden_size=1000, return_logits=False):
         super(BBMLPCLF, self).__init__()
         self.fc1 = nn.Linear(input_size, hidden_size)
         self.fc2 = nn.Linear(hidden_size, output_size)
+        self.return_logits = return_logits  # Save preference
 
     def forward(self, x):
         x = F.relu(self.fc1(x))
         x = self.fc2(x)
-        x = torch.sigmoid(x)  # Apply sigmoid to the output
+        # Only apply Sigmoid if we DON'T want logits ( DICE needs sigmoid output, CrossEntropy loss needs logits)
+        # https://docs.pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html
+        if not self.return_logits:
+            x = torch.sigmoid(x)
         return x

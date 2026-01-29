@@ -152,7 +152,7 @@ def train_black_box_clf_original_data(info, train_loader, test_loader=None, num_
     # y_train_t = torch.tensor(y_n)
     
 
-    clf = BBMLPCLF(input_shape)
+    clf = BBMLPCLF(input_shape, return_logits=True)
 
     criterion = nn.CrossEntropyLoss()  # Use Cross Entropy Loss for classification
     optimizer = optim.Adam(clf.parameters(), lr=0.001)
